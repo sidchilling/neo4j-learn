@@ -1,0 +1,23 @@
+{
+  "name": "cypher-graph-tutorial",
+  "version": "1.0.0",
+  "description": "This contains the source files which I worked on while learning the cypher query language from the official documentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "chalk": "^1.1.3",
+    "eslint": "^3.19.0",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "neo4j-driver": "^1.2.0",
+    "nodemon": "^1.11.0"
+  }
+}
