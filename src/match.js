@@ -98,7 +98,7 @@ const multipleRelationships = () => {
   })
 }
 
-const variableLengthRelationship = function() {
+const variableLengthRelationship = () => {
   const q = `
     MATCH (martin :Person { name: 'Martin Sheen' })-[:ACTED_IN*1..3]->(movie :Movie)
     RETURN movie
@@ -115,7 +115,7 @@ const variableLengthRelationship = function() {
   })
 }
 
-const coActors = function() {
+const coActors = () => {
   // Find Martin Sheen's coactors in movies
   const q = `
     MATCH (martin :Person { name: 'Martin Sheen' })-[:ACTED_IN]->(movie :Movie)<-[:ACTED_IN]-(actor :Person)
@@ -135,7 +135,7 @@ const coActors = function() {
   })
 }
 
-const namedPath = function() {
+const namedPath = () => {
   const q = `
     MATCH p = (mike :Person { name: 'Michael Douglas' })-->()
     RETURN p
@@ -148,7 +148,7 @@ const namedPath = function() {
   })
 }
 
-const singleShortestPath = function() {
+const singleShortestPath = () => {
   const q = `
     MATCH (martin :Person { name: 'Martin Sheen' }), (oliver :Person { name: 'Oliver Stone' }),
       p = shortestPath((martin)-[*0..15]-(oliver))
